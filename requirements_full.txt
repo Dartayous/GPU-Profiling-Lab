@@ -1,0 +1,6 @@
+cupy
+numpy
+opencv-python
+matplotlib
+nvtx
+jupyter

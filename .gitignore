@@ -1,0 +1,57 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+*.env
+*.venv/
+venv/
+env/
+ENV/
+gpu-lab/
+
+# Conda environment folders (if created locally)
+*.conda
+*.condarc
+*.yaml
+*.yml
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Nsight Systems output
+*.nsys-rep
+*.qdrep
+*.sqlite
+*.nvvp
+*.ncu-rep
+
+# Ignore specific notebooks and scripts
+pre_written_CPU_tools_SIM.ipynb
+diagnostics.ipynb
+diagnostics.py
+
+# Optional: profiling logs or temp files
+*.tmp
+*.bak
+*.trace
+*.profile
