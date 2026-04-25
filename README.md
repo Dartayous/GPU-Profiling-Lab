@@ -49,11 +49,11 @@ Implemented using cp.RawKernel and launched with (16, 16) blocks.
 
 ##  Nsight Systems Timeline
 
-* 🟩 Preprocessing: Image load and GPU transfer
+*  Preprocessing: Image load and GPU transfer
 
-* 🟪 Fused Kernel in Stream: CUDA kernel execution
+*  Fused Kernel in Stream: CUDA kernel execution
 
-* 🟥 Postprocessing: Result transfer and save
+*  Postprocessing: Result transfer and save
 
 NVTX markers segment the timeline for clarity. Kernel execution time: ~X.XX ms
 
