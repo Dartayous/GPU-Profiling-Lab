@@ -1,4 +1,4 @@
-# 🎬 Custom CUDA Kernel with Stream Concurrency
+#  Custom CUDA Kernel with Stream Concurrency
 A fused image processing pipeline using CUDA, Cupy, and NVTX—profiling kernel performance with Nsight Systems and visualizing execution in a dashboard-style notebook.
 
 ---
@@ -9,7 +9,7 @@ A fused image processing pipeline using CUDA, Cupy, and NVTX—profiling kernel 
 
 ---
 
-## 📸 Input vs. Fused Output
+##  Input vs. Fused Output
 
 #### Input Image
 <p align="center">
@@ -25,7 +25,7 @@ The fused output combines blur, brightness correction, and Sobel edge detection 
 
 ---
 
-## ⚙️ Pipeline Overview
+##  Pipeline Overview
 * Preprocessing: Load grayscale image and transfer to GPU
 
 * Fused Kernel: Apply blur → brightness → Sobel → blend
@@ -36,7 +36,7 @@ All operations are wrapped in NVTX markers and launched inside a non-blocking CU
 
 ---
 
-## 🔧 Kernel Summary
+##  Kernel Summary
 // CUDA kernel pseudocode
 blur = average(3x3 neighborhood)
 corrected = clamp(blur + brightness)
@@ -47,7 +47,7 @@ Implemented using cp.RawKernel and launched with (16, 16) blocks.
 
 ---
 
-## 📊 Nsight Systems Timeline
+##  Nsight Systems Timeline
 
 * 🟩 Preprocessing: Image load and GPU transfer
 
@@ -59,7 +59,7 @@ NVTX markers segment the timeline for clarity. Kernel execution time: ~X.XX ms
 
 ---
 
-## 🚀 Performance Insights
+##  Performance Insights
 * Fused kernel reduced launch overhead and memory latency
 
 * Stream concurrency enabled overlap between compute and memory ops
@@ -68,7 +68,7 @@ NVTX markers segment the timeline for clarity. Kernel execution time: ~X.XX ms
 
 ---
 
-## 🧠 Next Steps
+##  Next Steps
 * Add batch processing and multi-stream orchestration
 
 * Expand to RGB image support
@@ -79,7 +79,7 @@ NVTX markers segment the timeline for clarity. Kernel execution time: ~X.XX ms
 
 ---
 
-## 🧾 Notebook Preview
+##  Notebook Preview
 * Explore the full pipeline in GPU_Profiling_Storyboard.ipynb, including:
 
 * Input/output previews
@@ -96,7 +96,7 @@ NVTX markers segment the timeline for clarity. Kernel execution time: ~X.XX ms
 conda create -n gpu-lab --file requirements.txt
 
 ---
-## 🧠 Author
+##  Author
 #### Dartayous 
 Creative Technologist & AI/ML Engineer 
 Specializing in GPU profiling, modular pipelines, and cinematic documentation
