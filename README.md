@@ -98,5 +98,5 @@ conda create -n gpu-lab --file requirements.txt
 ---
 ##  Author
 #### Dartayous 
-Creative Technologist & AI/ML Engineer 
+Creative Technologist & AI/ML/CV Engineer 
 Specializing in GPU profiling, modular pipelines, and cinematic documentation
